@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+p,h1,h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+nav h1{
+    font-size: 3em;
+    color: rgb(212, 248, 10);
+}
+
+.menu a{
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .background{
+    background-color: rgb(107, 94, 94);
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+
+}
+header .nama{
+    position: absolute;
+    font-size: 3em;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.background  img {
+    margin-right: -5px;
+}
+
+.nama button{
+    width: 80px;
+    height: 35px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    border: radius;
+    background-color: rgb(216 255 0);
+}
+
+.kedua{
+    background-color: #303131;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.kedua .aboutme h1{
+    border: 2px solid yellow;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.kedua .kanan{
+    padding: 50px 0;
+}
+.kedua .kanan .isi{
+    padding: 50px 0;
+}
+.kedua .kanan .isi p{
+    color: grey;
+}
+.kedua .kanan .language .language{
+    display: flex;
+}
+.kedua .kanan .language .language .indonesia-border{
+    display: flex;
+    margin: 0 20px;
+}
+.kedua .kanan .language .language .indonesia-border .abu{
+    border: 2px solid grey;
+    background-color: grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 100px;
+    height: 10px;
+}
+.kedua .kanan .language .language .indonesia-border .putih{
+    border: 2px solid white;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 10px;
+    height: 10px;
+}
+.kedua .kanan .language .language.english{
+    margin: 30px 0;
+}
+.kedua .kanan .language .language .english-border{
+    display: flex;
+    margin: 0 39px;
+    margin-right: 20px;
+}
+.kedua .kanan .language .language .english-border .abu{
+    border: 2px solid grey;
+    background-color: grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 100px;
+    height: 10px;
+}
+.kedua .kanan .language .language .english-border .putih{
+    border: 2px solid white;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 10px;
+    height: 10px;
+}
+.kedua .kanan .language .language .chinese-border{
+    display: flex;
+    margin: 0 34px;
+    margin-right: 21px;
+}
+.kedua .kanan .language .language .chinese-border .abu{
+    border: 2px solid grey;
+    background-color: grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 100px;
+    height: 10px;
+}
+.kedua .kanan .language .language .chinese-border .putih{
+    border: 2px solid white;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 10px;
+    height: 10px;
+}
+/* about me  */
+.kedua .aboutme{
+    display: flex;
+}
+.Kedua .aboutme h1{
+    display: flex;
+    align-items: center;
+    font-size: 8vh;
+    color: white;
+}
+.Kedua .aboutme .language .language{
+    display: flex;
+    align-items: center;
+}
+.Kedua .aboutme .language .language h2{
+    font-size: 4vh;
+}
+.Kedua .aboutme .language .language.language.ind .indonesia-border .abu{
+    border: 2px solid #303131;
+    background-color: #303131;
+    width: 90%;
+}
+
+
+/* ketiga */
+.ketiga{
+    background-color: #181919;
+    padding: 40px 70px;
+}
+.ketiga .tittle{
+    display: flex;
+    justify-content: center;
+}
+.ketiga .tittle h1{
+    font-size: 6vh;
+    color: white;
+}
+.ketiga .adobe{
+    display: flex;
+    justify-content: space-between;
+}
+.ketiga .adobe .adobe1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.ketiga .adobe .adobe1 .kanan p{
+    color: white;
+    margin-bottom: 5px;
+}
+.ketiga .adobe .adobe1 .kanan .bar{
+    display: flex;
+    width: 128px;
+}
+.ketiga .adobe .adobe1 .kanan .bar .abu{
+    border: 2px solid grey;
+    background-color: grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 60%;
+    height: 10px;
+}
+.ketiga .adobe .adobe1 .kanan .bar .putih{
+    border: 2px solid white;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 40%;
+    height: 10px;
+}
+
+
+/* keempat */
+.keempat{
+    padding: 30px 0;
+    background-color: #303131;
+}
+.keempat .title {
+    display: flex;
+    justify-content: center;
+}
+.keempat .title h1{
+    font-size: 7vh;
+    color: white;
+}
+.keempat .bpanjang{
+    justify-content: center;
+    display: flex;
+}
+.keempat .panjang{
+    margin: 30px 0;
+    border-top: 4px solid yellow;
+    width: 150px;
+}
+.keempat .image{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.keempat .image img{
+    height: 300px;
+    width: 200px;
+}
+.keempat .bpanjangs{
+    display: flex;
+    justify-content: center;
+}
+.keempat .bpanjangs .panjangs{
+    margin: 30px 0;
+    border-top: 4px solid grey;
+    width: 150px;
+}
+.keempat .bpendek{
+    display: flex;
+    justify-content: center;
+}
+.keempat .bpendek .pendek{
+    margin: 20px 0;
+    border-top: 4px solid grey;
+    width: 75px;
+}
+.keempat .bbulat{
+    display: flex;
+    justify-content: center;
+}
+.keempat .bbulat .bulat{
+    margin: 20px 0;
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+/* kelima */
+
+.kelima {
+    background-color: #181919;
+    padding: 30px 0;
+}
+.kelima .title {
+    display: flex;
+    justify-content: center;
+}
+.kelima .title h1{
+    font-size: 7vh;
+    color: grey;
+}
+.kelima .bpanjang{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.kelima .bpanjang .panjang{
+    margin: 30px 0;
+    border-top: 4px solid white;
+    width: 300px;
+}
+.kelima .button{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.kelima .button button{
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+}
+.kelima .button button p{
+    font-weight: bold;
+}
+
+/* keenam */
+
+.keenam{
+    background-color: #303131;
+    padding: 30px 0;
+}
+.keenam .title {
+    display: flex;
+    justify-content: center;
+}
+.keenam .title h1{
+    font-size: 7vh;
+    color: white;
+}
+.keenam .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.keenam .form h1{
+    margin-bottom: 10px;
+    color: grey;
+}
+.keenam .form input{
+    border-radius: 8px;
+    border: 1px solid grey;
+    background-color: rgb(197, 197, 197);
+}
+.keenam .form .NE{
+    margin: 20px 0;
+    display: flex;
+    width: 350px;
+    gap: 13px;
+}
+.keenam .form .submit button{
+    margin: 10px 0;
+    height: 20px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    background-color:  yellow;
+}
